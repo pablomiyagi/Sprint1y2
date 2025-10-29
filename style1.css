@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 1rem;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.busqueda input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.login button {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contenedor {
+    display: flex;
+    flex: 1;
+}
+
+.navegacion {
+    width: 15%;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.navegacion li {
+    margin: 1rem 0;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.indice {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-right: 1px solid #ccc;
+}
+
+.contenido {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nivel {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.interaccion {
+    background-color: #d0f0ff;
+    padding: 1rem;
+    flex: 1;
+}
