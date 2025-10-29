@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Carbono | EcoCloud</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">🌳 EcoCloud</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de EcoCloud</a></li>
+        <li><a href="dashboard.html" class="activo">Dashboard de Carbono</a></li>
+        <li><a href="Nuestrocompromiso.html">Nuestro Compromiso</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Dashboard de Huella de Carbono</h1>
+
+    <section class="contenedor-dashboard">
+      <div class="calculadora">
+        <h2>Calculadora de CO₂</h2>
+        <label for="trafico">Tráfico web diario (visitas):</label>
+        <input type="number" id="trafico" placeholder="Ej. 1000">
+
+        <label for="contenido">Tipo de contenido:</label>
+        <select id="contenido">
+          <option value="texto">Principalmente texto</option>
+          <option value="imagenes">Imágenes</option>
+          <option value="video">Video</option>
+        </select>
+
+        <button id="calcular">Calcular</button>
+      </div>
+
+      <div class="resultado">
+        <h2>Resultado</h2>
+        <p>Emisiones estimadas:</p>
+        <p><strong id="resultado-trad">-</strong> g CO₂ (Servidor Tradicional)</p>
+        <p><strong id="resultado-eco">-</strong> g CO₂ (EcoCloud)</p>
+      </div>
+    </section>
+
+    <section class="grafico">
+      <h2>Comparativa de Emisiones</h2>
+      <canvas id="graficoCO2"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 EcoCloud Hosting | Dashboard de Huella de Carbono 🌎</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
