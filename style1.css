@@ -28,9 +28,8 @@ header {
     
 }
 
-.logo img{
-    width: 90px;
-    height: 50px;
+.logo p{
+    font-size: 50px;
 }
 
 .login {
@@ -150,10 +149,10 @@ main {
 }
 
 footer {
-    background-color: darkcyan;
-    color:bisque;
+    background-color: #333;
+    color: white;
     text-align: center;
     bottom: 0;       
     left: 0;
-    padding: 10px;
+    padding: 20px;
 }
