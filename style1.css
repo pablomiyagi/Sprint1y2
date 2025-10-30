@@ -156,6 +156,9 @@ footer {
     text-align: center;
     padding: 2rem;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .sr-only {
@@ -168,6 +171,26 @@ footer {
     border: 0;
 }
 
+footer p {
+  margin: 0; /* quita márgenes para que no desplace nada */
+}
+
+footer .social-list {
+    display: flex;
+  gap: 10px; /* espacio entre íconos */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .social-list li {
+    display: inline-block;
+}
+
+footer .social-list img {
+    width: 24px;
+    height: 24px;
+}
 @media (max-width: 900px) {
     .layout {
         flex-direction: column;
