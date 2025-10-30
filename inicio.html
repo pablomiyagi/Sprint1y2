@@ -1,54 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="huella_de_carbono.webp" type="image/webp">
     <link rel="stylesheet" href="style1.css">
-    <link rel="icon" href="huella_de_carbono.webp" tipe="webp">
-    <title>Inicio</title>
+    <title>EcoCloud | Inicio</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <p>🌳 EcoCloud</p>
+            <p>🌳 <span>EcoCloud</span></p>
         </div>
-        <div class="busqueda">
-            <input type="text" placeholder="Buscar...">
-        </div>
-        <div class="login">
-            <p>Log-in</p>
-        </div>
+        <form class="busqueda" role="search">
+            <label for="buscar" class="sr-only">Buscar</label>
+            <input type="text" id="buscar" placeholder="Buscar...">
+        </form>
+        <a href="login.html" class="btn-login">Log in</a>
     </header>
 
     <div class="layout">
         <nav class="navegacion">
             <ul>
-                <li><a id="inicio" href="inicio.html">Inicio</a></li>
+                <li><a class="activo" href="inicio.html">Inicio</a></li>
                 <li><a href="Acercadeecocloud.html">Acerca de EcoCloud</a></li>
                 <li><a href="Dashboard.html">Dashboard</a></li>
                 <li><a href="Nuestrocompromiso.html">Nuestro compromiso</a></li>
             </ul>
         </nav>
+
         <main>
             <section class="contenido">
-                <div class="hola">
-                    <h2>¡Bienvenidos a nuestra web!</h2>
-                </div>
-                <div class="introduc">
-                    <h2>¿Quienes somos?</h2>
+                <div class="card bienvenida">
+                    <h1>Bienvenidos a EcoCloud 🌎</h1>
                     <p>
-                        ¡Hola a todos! Somos Pablo, Nelson y Javier, estudiantes de 2º de SMR A. 
-                        Este es nuestro primer proyecto en el que estamos aprendiendo a desarrollar páginas web utilizando HTML, CSS y JavaScript. Con este trabajo, 
-                        buscamos poner en práctica los conocimientos adquiridos en clase y dar nuestros primeros pasos en el mundo del desarrollo web. 
-                        ¡Esperamos que os guste y que sigamos mejorando día a día!
+                        Donde la tecnología y la sostenibilidad se unen para crear un futuro más verde.
+                        Aprende, mide y mejora tu impacto ambiental con nuestras herramientas.
                     </p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5EhuZntZPuDAwTj5dyStWBwr_IShr-32Yiw&s" alt="nosotros">
+                    <a href="Dashboard.html" class="btn-principal">Explorar Dashboard</a>
+                </div>
+
+                <div class="card equipo">
+                    <h2>¿Quiénes somos?</h2>
+                    <p>
+                        Somos <strong>Pablo</strong>, <strong>Nelson</strong> y <strong>Javier</strong>,
+                        estudiantes de 2º de SMR A. Este proyecto es nuestro primer paso en el
+                        desarrollo web con HTML, CSS y JavaScript, aplicando nuestros conocimientos para crear
+                        una experiencia educativa y ecológica. 🌱
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5EhuZntZPuDAwTj5dyStWBwr_IShr-32Yiw&s" alt="Nuestro equipo">
                 </div>
             </section>
         </main>
-    </div>    
+    </div>
+
     <footer>
-        <p>@Pablo Millan, Nelson Noriega y Javier Palomino</p>
+        <p>&copy; 2025 — Pablo Millán, Nelson Noriega y Javier Palomino | EcoCloud</p>
     </footer>
 </body>
 </html>
