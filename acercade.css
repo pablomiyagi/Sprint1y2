@@ -1,4 +1,4 @@
-/* 🌿 ESTILOS GENERALES ECOCLOUD */
+/* ===== ESTILOS GENERALES ===== */
 * {
     margin: 0;
     padding: 0;
@@ -75,7 +75,6 @@ body {
     width: 220px;
     min-height: calc(100vh - 80px);
     padding-top: 2rem;
-    transition: all 0.3s ease;
 }
 
 .navegacion ul {
@@ -98,52 +97,46 @@ body {
 }
 
 /* ===== TARJETAS ===== */
-main {
-    flex: 1;
-    padding: 1.5rem;
-}
-
 .Introduccion {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 1rem 1.5rem;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: white;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    width: 85%;
+    max-width: 900px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 80px; /* 🔹 Mucho más baja */
+    min-height: 150px; /* 🔥 TARJETAS MÁS BAJAS */
 }
 
 .Introduccion:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
-.info {
-    max-width: 80%;
+.Introduccion .info {
+    flex: 1;
 }
 
-.info h2 {
+.Introduccion h2 {
     color: #2E7D32;
-    margin-bottom: 0.2rem;
-    font-size: 1rem;
-    line-height: 1.1;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
 }
 
-.info p {
-    line-height: 1.3;
-    font-size: 0.85rem;
-    color: #444;
+.Introduccion p {
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
 .Introduccion img {
-    width: 60px;
-    height: 60px;
-    border-radius: 6px;
-    object-fit: cover;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 1rem;
 }
 
 /* ===== FOOTER ===== */
@@ -210,25 +203,14 @@ footer .social-list img:hover {
         padding: 0.8rem 1rem;
     }
 
-    .busqueda input {
-        width: 200px;
-    }
-
     .Introduccion {
         flex-direction: column;
         text-align: center;
-        padding: 0.5rem;
-        min-height: auto;
-    }
-
-    .info {
-        max-width: 100%;
+        width: 95%;
     }
 
     .Introduccion img {
-        margin-top: 0.3rem;
-        width: 50px;
-        height: 50px;
+        margin: 1rem 0 0;
     }
 
     footer {
@@ -237,6 +219,7 @@ footer .social-list img:hover {
         text-align: center;
     }
 }
+
 
 
 
