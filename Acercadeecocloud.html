@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="huella_de_carbono.webp" type="image/webp">
     <link rel="stylesheet" href="acercade.css">
-    <title>EcoCloud | Inicio</title>
+    <title>EcoCloud | Acerca de</title>
 </head>
 <body>
     <header class="header">
@@ -13,7 +13,7 @@
             <p>🌳 <span>EcoCloud</span></p>
         </div>
         <form class="busqueda" role="search">
-            <label for="buscar" class="sr-only">Buscar</label>
+            <label for="buscar" class="sr-only"></label>
             <input type="text" id="buscar" placeholder="Buscar...">
         </form>
         <a href="login.html" class="btn-login">Log in</a>
@@ -22,58 +22,67 @@
     <div class="layout">
         <nav class="navegacion">
             <ul>
-                <li><a class="activo" href="inicio.html">Inicio</a></li>
-                <li><a href="Acercadeecocloud.html">Acerca de EcoCloud</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a class="activo" href="Acercadeecocloud.html">Acerca de EcoCloud</a></li>
                 <li><a href="Dashboard.html">Dashboard</a></li>
                 <li><a href="Nuestrocompromiso.html">Nuestro compromiso</a></li>
             </ul>
         </nav>
-        <section class="Introduccion">
-            <div class="info">
-        <h2>Información sobre EcoCloud</h2>
-        <p>Es el único centro académico de su tipo que permite el uso de datos inteligentes ecológicos a través de plataformas de datos resilientes, eficientes, seguras y confiables</p>
-        </div>
-        <img src="20210316_PeaSoup_ECO_Cloud.fw_.png" width="150">
-        </section>
-        <section class="Introduccion">
-            <div class="info">
-        <h2>Objetivos</h2>
-        <p>Su objetivo es liderazgo mundial e impulsar la innovación en plataformas y tecnologías de datos resilientes eficientes, seguras y confiables, pretenden abordar los principales desafíos nacionales y globales</p>
-        </div>
-        <img src="greenhosting6_green.webp" width="150">
-        </section>
-        <section class="Introduccion">
-            <div class="info">
-        <h2>Estructura</h2>
-        <p>Queremos proporcionar bases computacionales y de comunicación para el desarrollo sostenible </p>
-        </div>
-        <img src="ecocloud.avif" width="150">
-        </section>
-        <section class="Introduccion">
-            <div class="info">
-        <h2>Infraestrtuctura sostenible</h2>
-        <p>Los centros de datos, requieren innovación en tecnologías integradas y codiseñadas para refrigeración, generación de electricidad, almacenamiento y gestión para maximizar energías renovables y uso de energía sostenible </p>
-        </div>
-        <img src="automotive-sector-3.png" width="150">
-        </section>
-        <section class="Introduccion">
-            <div class="info">
-        <h2>Difusion de las mejores Infraestrtuctura</h2>
-        <p>Crean actividades de divulgación con otros centros para ayudar a llevar mejor las practicas</p>
-        </div>
-        <img src="retail-image-2.png" width="150">
-        </section>
-        <section class="Introduccion">
-            <div class="info">
-        <h2>Funciones</h2>
-        <p>Ofrece a las empresas software personalizado para el registro, análisis y evaluación de datos de sostenibilidad, impulsando una gestión ambiental más inteligente y eficiente.</p>
-        </div>
-        <img src="carbon.webp" width="150">
-        </section>
-    </main>
-     <footer>
-        <p>&copy; 2025 — Pablo Millán, Nelson Noriega y Javier Palomino | EcoCloud</p>
 
+        <!-- 🔹 Contenedor de tarjetas en columna -->
+        <main class="tarjetas">
+            <section class="Introduccion">
+                <div class="info">
+                    <h2>Información sobre EcoCloud</h2>
+                    <p>Es el único centro académico de su tipo que permite el uso de datos inteligentes ecológicos a través de plataformas de datos resilientes, eficientes, seguras y confiables.</p>
+                </div>
+                <img src="20210316_PeaSoup_ECO_Cloud.fw_.png" width="150" alt="EcoCloud">
+            </section>
+
+            <section class="Introduccion">
+                <div class="info">
+                    <h2>Objetivos</h2>
+                    <p>Su objetivo es liderazgo mundial e impulsar la innovación en plataformas y tecnologías de datos resilientes, eficientes, seguras y confiables, abordando desafíos nacionales y globales.</p>
+                </div>
+                <img src="greenhosting6_green.webp" width="150" alt="Objetivos">
+            </section>
+
+            <section class="Introduccion">
+                <div class="info">
+                    <h2>Estructura</h2>
+                    <p>Queremos proporcionar bases computacionales y de comunicación para el desarrollo sostenible.</p>
+                </div>
+                <img src="ecocloud.avif" width="150" alt="Estructura">
+            </section>
+
+            <section class="Introduccion">
+                <div class="info">
+                    <h2>Infraestructura sostenible</h2>
+                    <p>Los centros de datos requieren innovación en tecnologías integradas y codiseñadas para refrigeración, generación de electricidad y almacenamiento, maximizando el uso de energía renovable.</p>
+                </div>
+                <img src="automotive-sector-3.png" width="150" alt="Infraestructura sostenible">
+            </section>
+
+            <section class="Introduccion">
+                <div class="info">
+                    <h2>Difusión de las mejores prácticas</h2>
+                    <p>Crean actividades de divulgación con otros centros para ayudar a llevar mejores prácticas sostenibles.</p>
+                </div>
+                <img src="retail-image-2.png" width="150" alt="Difusión">
+            </section>
+
+            <section class="Introduccion">
+                <div class="info">
+                    <h2>Funciones</h2>
+                    <p>Ofrece a las empresas software personalizado para el registro, análisis y evaluación de datos de sostenibilidad, impulsando una gestión ambiental más inteligente y eficiente.</p>
+                </div>
+                <img src="carbon.webp" width="150" alt="Funciones">
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 — Pablo Millán, Nelson Noriega y Javier Palomino | EcoCloud</p>
         <ul class="social-list" aria-hidden="true">
             <li><a href="#" title="Facebook"><img src="icon-facebook.svg" alt="Facebook"></a></li>
             <li><a href="#" title="Instagram"><img src="icon-instagram.svg" alt="Instagram"></a></li>

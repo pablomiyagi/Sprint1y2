@@ -101,15 +101,16 @@ body {
     background: white;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     margin: 1rem auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column; /* 🔹 Texto arriba, imagen abajo */
+    align-items: flex-start; /* 🔹 Texto alineado a la izquierda */
+    justify-content: center;
     width: 85%;
     max-width: 900px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 150px; /* 🔥 TARJETAS MÁS BAJAS */
+    min-height: 150px;
 }
 
 .Introduccion:hover {
@@ -118,27 +119,29 @@ body {
 }
 
 .Introduccion .info {
-    flex: 1;
+    width: 100%;
+    text-align: left; /* 🔹 Alinea el texto a la izquierda */
 }
 
 .Introduccion h2 {
     color: #2E7D32;
-    font-size: 1.2rem;
-    margin-bottom: 0.4rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .Introduccion p {
-    font-size: 0.9rem;
-    line-height: 1.4;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
+/* 🔹 Centra la imagen debajo del texto */
 .Introduccion img {
-    width: 100px;
+    display: block;
+    margin: 1rem auto 0 auto; /* 🔹 Centrada horizontalmente */
+    width: 120px;
     height: auto;
     border-radius: 10px;
-    margin-left: 1rem;
 }
-
 /* ===== FOOTER ===== */
 footer {
     background-color: #333;
@@ -218,6 +221,14 @@ footer .social-list img:hover {
         gap: 1rem;
         text-align: center;
     }
+}
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Espaciado entre tarjetas */
+    padding: 2rem 0;
+    flex: 1;
 }
 
 
