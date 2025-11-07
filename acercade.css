@@ -138,7 +138,7 @@ body {
 .Introduccion img {
     display: block;
     margin: 1rem auto 0 auto; /* 🔹 Centrada horizontalmente */
-    width: 120px;
+    width: 150px;
     height: auto;
     border-radius: 10px;
 }
@@ -212,9 +212,7 @@ footer .social-list img:hover {
         width: 95%;
     }
 
-    .Introduccion img {
-        margin: 1rem 0 0;
-    }
+    
 
     footer {
         flex-direction: column;
