@@ -1,7 +1,8 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
 }
 
 body {
@@ -14,36 +15,101 @@ body {
 }
 
 /* HEADER */
-header {
-  background-color: #4CAF50;
+.header {
+  background-color: #2E7D32;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
+
+.busqueda input {
+    padding: 0.6rem 1rem;
+    border-radius: 30px;
+    border: none;
+    width: 300px;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+/* Logo */
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+.logo span {
+  color: #C8E6C9;
 }
 
-.menu a {
+/*Boton login*/
+.btn-login {
+    background-color: white;
+    color: #2E7D32;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #1B5E20;
+    color: white;
+}
+
+.btn-principal {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-principal:hover {
+    background-color: #1B5E20;
+}
+
+
+/* Navegacion */
+.layout {
+  display: flex;
+  flex: 1;
+}
+
+.navegacion {
+  background-color: #333;
+  color: white;
+  width: 220px;
+  min-height: calc(100vh - 80px);
+  padding-top: 2rem;
+  transition: all 0.3s ease;
+}
+
+.navegacion ul {
+  list-style: none;
+}
+
+.navegacion a {
+  display: block;
+  padding: 1rem 1.5rem;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
-.menu a:hover,
-.menu a.activo {
-  text-decoration: underline;
+.navegacion a:hover,
+.navegacion a.activo {
+  background-color: #4CAF50;
+  color: white;
 }
 
 /* MAIN */
@@ -131,11 +197,45 @@ h1 {
 
 /* FOOTER */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+footer p {
+  margin: 0; /* quita márgenes para que no desplace nada */
+}
+
+footer .social-list {
+  display: flex;
+  gap: 10px; /* espacio entre íconos */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .social-list li {
+  display: inline-block;
+}
+
+footer .social-list img {
+  width: 24px;
+  height: 24px;
 }
 
 /* RESPONSIVE */
@@ -143,5 +243,30 @@ footer {
   .contenedor-dashboard {
     flex-direction: column;
     align-items: center;
+  }
+
+  .layout {
+    flex-direction: column;  
+  }
+  
+  .navegacion {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navegacion ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navegacion a {
+    padding: 0.8rem 1rem;
+  }
+
+  .busqueda input {
+    width: 200px;
   }
 }

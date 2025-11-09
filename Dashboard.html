@@ -8,53 +8,67 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <header>
-    <div class="logo">🌳 EcoCloud</div>
-    <nav>
-      <ul class="menu">
-        <li><a href="inicio.html">Inicio</a></li>
-        <li><a href="Acercadeecocloud.html">Acerca de EcoCloud</a></li>
-        <li><a href="Dashboard.html" class="activo">Dashboard de Carbono</a></li>
-        <li><a href="Nuestrocompromiso.html">Nuestro Compromiso</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="logo">
+      <p>🌳 <span>EcoCloud</span></p>
+    </div>
+    <form class="busqueda" role="search">
+      <label for="buscar" class="sr-only">Buscar</label>
+      <input type="text" id="buscar" placeholder="Buscar...">
+    </form>
+    <a href="login.html" class="btn-login">Log in</a>
   </header>
 
-  <main>
-    <h1>Dashboard de Huella de Carbono</h1>
+  <div class="layout">
+      <nav class="navegacion">
+        <ul>
+          <li><a  href="inicio.html">Inicio</a></li>
+          <li><a href="Acercadeecocloud.html">Acerca de EcoCloud</a></li>
+          <li><a class="activo" href="Dashboard.html">Dashboard</a></li>
+          <li><a href="Nuestrocompromiso.html">Nuestro compromiso</a></li>
+        </ul>
+      </nav>
+    <main>
+      <h1>Dashboard de Huella de Carbono</h1>
 
-    <section class="contenedor-dashboard">
-      <div class="calculadora">
-        <h2>Calculadora de CO₂</h2>
-        <label for="trafico">Tráfico web diario (visitas):</label>
-        <input type="number" id="trafico" placeholder="Ej. 1000">
+      <section class="contenedor-dashboard">
+        <div class="calculadora">
+          <h2>Calculadora de CO₂</h2>
+          <label for="trafico">Tráfico web diario (visitas):</label>
+          <input type="number" id="trafico" placeholder="Ej. 1000">
 
-        <label for="contenido">Tipo de contenido:</label>
-        <select id="contenido">
-          <option value="texto">Principalmente texto</option>
-          <option value="imagenes">Imágenes</option>
-          <option value="video">Video</option>
-        </select>
+          <label for="contenido">Tipo de contenido:</label>
+          <select id="contenido">
+            <option value="texto">Principalmente texto</option>
+            <option value="imagenes">Imágenes</option>
+            <option value="video">Video</option>
+          </select>
 
-        <button id="calcular">Calcular</button>
-      </div>
+          <button id="calcular">Calcular</button>
+        </div>
 
-      <div class="resultado">
-        <h2>Resultado</h2>
-        <p>Emisiones estimadas:</p>
-        <p><strong id="resultado-trad">-</strong> g CO₂ (Servidor Tradicional)</p>
-        <p><strong id="resultado-eco">-</strong> g CO₂ (EcoCloud)</p>
-      </div>
-    </section>
+        <div class="resultado">
+          <h2>Resultado</h2>
+          <p>Emisiones estimadas:</p>
+          <p><strong id="resultado-trad">-</strong> g CO₂ (Servidor Tradicional)</p>
+          <p><strong id="resultado-eco">-</strong> g CO₂ (EcoCloud)</p>
+        </div>
+      </section>
 
-    <section class="grafico">
-      <h2>Comparativa de Emisiones</h2>
-      <canvas id="graficoCO2"></canvas>
-    </section>
-  </main>
-
+      <section class="grafico">
+        <h2>Comparativa de Emisiones</h2>
+        <canvas id="graficoCO2"></canvas>
+      </section>
+    </main>
+  </div>
   <footer>
-    <p>© 2025 EcoCloud Hosting | Dashboard de Huella de Carbono 🌎</p>
+        <p>&copy; 2025 — Pablo Millán, Nelson Noriega y Javier Palomino | EcoCloud</p>
+
+        <ul class="social-list" aria-hidden="true">
+            <li><a href="#" title="Facebook"><img src="icon-facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#" title="Instagram"><img src="icon-instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#" title="X"><img src="icon-x.svg" alt="X"></a></li>
+        </ul>
   </footer>
 
   <script src="Dashboard.js"></script>
