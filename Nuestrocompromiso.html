@@ -7,73 +7,79 @@
   <link rel="stylesheet" href="Nuestrocompromiso.css">
 </head>
 <body>
-  <header>
-    <div class="logo">🌳 EcoCloud</div>
-
-    <nav aria-label="Navegación principal">
-      <ul class="nav-list">
-        <li><a href="inicio.html">Inicio</a></li>
-        <li><a href="Acercadeecocloud.html">Acerca de EcoCloud</a></li>
-        <li><a href="Dashboard.html">Dashboard de Carbono</a></li>
-        <li><a class="activo" href="Nuestrocompromiso.html">Nuestro Compromiso</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="logo">
+      <p>🌳 <span>EcoCloud</span></p>
+    </div>
+    <form class="busqueda" role="search">
+      <label for="buscar" class="sr-only">Buscar</label>
+      <input type="text" id="buscar" placeholder="Buscar...">
+    </form>
+    <a href="login.html" class="btn-login">Log in</a>
   </header>
 
-  <main>
-    <h1>Nuestro Compromiso</h1>
+  <div class="layout">
+    <nav class="navegacion">
+      <ul>
+        <li><a  href="inicio.html">Inicio</a></li>
+        <li><a href="Acercadeecocloud.html">Acerca de EcoCloud</a></li>
+        <li><a  href="Dashboard.html">Dashboard</a></li>
+        <li><a class="activo" href="Nuestrocompromiso.html">Nuestro compromiso</a></li>
+      </ul>
+    </nav>
 
-    <section class="compromiso">
-      <div class="info">
-        <h2>Compromiso 1: Energía 100% Renovable</h2>
-        <p>
-          Todos nuestros servidores funcionan exclusivamente con energía solar y eólica. Esto reduce significativamente las emisiones de CO₂ comparado con infraestructuras que dependen de combustibles fósiles.
-        </p>
-        <p>
-          <strong>Beneficio:</strong> Menor huella de carbono por kWh y por servicio alojado.
-        </p>
-      </div>
-      <img src="paneles solares y aerogeneradores.png" alt="Paneles solares y aerogeneradores">
-    </section>
+    <main>
+      <h1>Nuestro Compromiso</h1>
 
-    <section class="compromiso">
-      <div class="info">
-        <h2>Compromiso 2: Transparencia Ambiental</h2>
-        <p>
-          Publicamos métricas claras y accesibles sobre consumo energético y emisiones estimadas. En el Dashboard podrás comparar las emisiones de un servidor tradicional con las de EcoCloud.
-        </p>
-        <p>
-          <strong>Beneficio:</strong> Clientes informados que pueden tomar decisiones sostenibles.
-        </p>
-      </div>
-      <img src="Emisiones de CO2 en el mundo.png" alt="Gráficos y métricas ambientales">
-    </section>
+      <section class="compromiso">
+        <div class="info">
+          <h2>Compromiso 1: Energía 100% Renovable</h2>
+          <p>
+            Todos nuestros servidores funcionan exclusivamente con energía solar y eólica. Esto reduce significativamente las emisiones de CO₂ comparado con infraestructuras que dependen de combustibles fósiles.
+          </p>
+          <p>
+            <strong>Beneficio:</strong> Menor huella de carbono por kWh y por servicio alojado.
+          </p>
+        </div>
+        <img src="paneles solares y aerogeneradores.png" alt="Paneles solares y aerogeneradores">
+      </section>
 
-    <section class="compromiso">
-      <div class="info">
-        <h2>Compromiso 3: Educación Verde</h2>
-        <p>
-          Ofrecemos recursos y recomendaciones para reducir el impacto digital (optimización de imágenes, caching, uso responsable de vídeo, etc.) y ayudamos a implementar prácticas de desarrollo sostenibles.
-        </p>
-        <p>
-          <strong>Beneficio:</strong> Reducción de emisiones a nivel de aplicación y menor consumo de ancho de banda.
-        </p>
-      </div>
-      <img src="Imagen sosteniendo un libro.png" alt="Manos sosteniendo planta y libro educativo">
-    </section>
-  </main>
+      <section class="compromiso">
+        <div class="info">
+          <h2>Compromiso 2: Transparencia Ambiental</h2>
+          <p>
+            Publicamos métricas claras y accesibles sobre consumo energético y emisiones estimadas. En el Dashboard podrás comparar las emisiones de un servidor tradicional con las de EcoCloud.
+          </p>
+          <p>
+            <strong>Beneficio:</strong> Clientes informados que pueden tomar decisiones sostenibles.
+          </p>
+        </div>
+        <img src="Emisiones de CO2 en el mundo.png" alt="Gráficos y métricas ambientales">
+      </section>
+
+      <section class="compromiso">
+        <div class="info">
+          <h2>Compromiso 3: Educación Verde</h2>
+          <p>
+            Ofrecemos recursos y recomendaciones para reducir el impacto digital (optimización de imágenes, caching, uso responsable de vídeo, etc.) y ayudamos a implementar prácticas de desarrollo sostenibles.
+          </p>
+          <p>
+            <strong>Beneficio:</strong> Reducción de emisiones a nivel de aplicación y menor consumo de ancho de banda.
+          </p>
+        </div>
+        <img src="Imagen sosteniendo un libro.png" alt="Manos sosteniendo planta y libro educativo">
+      </section>
+    </main>
+  </div>
 
   <footer>
-    <div class="footer-inner">
-      <p>© 2025 EcoCloud Hosting | Plataforma verde para un futuro sostenible 🌱</p>
-      <ul class="footer-links">
+        <p>&copy; 2025 — Pablo Millán, Nelson Noriega y Javier Palomino | EcoCloud</p>
+
         <ul class="social-list" aria-hidden="true">
-        <li><a href="#" title="Facebook"><img src="icon-facebook.svg" alt="Facebook"></a></li>
-        <li><a href="#" title="Instagram"><img src="icon-instagram.svg" alt="Instagram"></a></li>
-        <li><a href="#" title="X"><img src="icon-x.svg" alt="X"></a></li>
-      </ul>
-      </ul>
-    </div>
+            <li><a href="#" title="Facebook"><img src="icon-facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#" title="Instagram"><img src="icon-instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#" title="X"><img src="icon-x.svg" alt="X"></a></li>
+        </ul>
   </footer>
 </body>
 </html>
